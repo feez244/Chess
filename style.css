@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Reddit Mono", monospace;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+header {
+    background-color: #A65900;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logoimg {
+    width: 30%;
+    height: auto;
+    object-fit: contain;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.feedback {
+    background-color: #000;
+    color: white;
+    padding: 50px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+}
+
+input {
+    width: 250px;
+    height: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+textarea {
+    width: 450px;
+    height: 200px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+button {
+    width: 150px;
+    height: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+footer {
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.logof {
+    display: flex;
+    align-items: center;
+}
+
+.logofimg {
+    width: 30%;
+    height: auto;
+    object-fit: contain;
+}
