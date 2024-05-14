@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chess</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https:////cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="https:////cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
     <header>
@@ -14,15 +17,88 @@
         </div>
         <nav>
             <ul>
-                <li><a href="">НОВОСТИ</a></li>
-                <li><a href="">ТУРНИРЫ</a></li>
-                <li><a href="">ОБУЧЕНИЕ</a></li>
-                <li><a href="">ПРАВИЛА</a></li>
+                <li><a href="#novosti" class="scroll">НОВОСТИ</a></li>
+                <li><a href="#turniry" class="scroll">ТУРНИРЫ</a></li>
+                <li><a href="#obuchenie" class="scroll">ОБУЧЕНИЕ</a></li>
+                <li><a href="#pravila" class="scroll">ПРАВИЛА</a></li>
+                <li><a href="#feedback" class="scroll">ОБРАТНАЯ СВЯЗЬ</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="feedback">
+        <section class="banner" id="novosti"> 
+           <div class="text">
+            <p class="text">
+                Карлсен оценил шансы
+                <br> 
+                Непомнящего
+                <br>
+                на Турнире претендентов — 2024
+            </p>
+            <button>Читать</button>
+           </div>
+           <div class="foto">
+            <img src="images/banner.jpg" alt="" class="fotoimg">
+           </div>
+        </section>
+        <section class="banner2" id="turniry">
+            <div class="text">
+             <p class="text">
+                прошла партия  на турнире
+                <br>
+                претендентов Алиреза Фирузджа и
+                <br>
+                Рамешбабу Прагнанандха 
+             </p>
+            </div>
+            <div class="foto">
+              <img src="images/banner2.jpg" alt="" class="fotoimg">
+            </div>
+        </section>
+        <div class="carousel" id="obuchenie">
+            <div class="carousel__item">
+                <img src="images/1693071536191717702.jpg" alt="" class="image">
+                <p class="title"></p>
+            </div>
+            <div class="carousel__item">
+                <img src="images/1693071542114219257.jpg" alt="" class="image">
+                <p class="title"></p>
+            </div>
+            <div class="carousel__item">
+                <img src="images/1693071536198149370.jpg" alt="" class="image">
+                <p class="title"></p>
+            </div>
+            <div class="carousel__item">
+                <img src="images/1693071538139070940.jpg" alt="" class="image">
+                <p class="title"></p>
+            </div>
+            <div class="carousel__item">
+                <img src="images/1693071538199260470.jpg" alt="" class="image">
+                <p class="title"></p>
+            </div>
+            <div class="carousel__item">
+                <img src="images/1693071540134919637.jpg" alt="" class="image">
+                <p class="title"></p>
+            </div>
+        </div>
+        <section class="banner3" id="pravila">
+            <div class="text">
+             <p class="text">
+                Шахматная партия ведётся между двумя соперниками на шахматной доске путём
+                <br>
+                передвижения шахматных фигур. Соперником (игроком, партнёром и т. п.) в шахматной 
+                <br>
+                партии может быть один человек, коллектив из нескольких человек или компьютер.
+                <br>
+                <br>
+                ссылка на подробные правила https://ru.wikipedia.org/wiki/Правила_шахмат.
+             </p>
+            </div>
+            <div class="foto">
+              <img src="images/banner3.jpg" alt="" class="fotoimg">
+            </div>
+        </section>
+        <section class="feedback" id="feedback">
             <form action="">
                 <h2>Форма обратной связи</h2>
                 <input type="text" placeholder="Ввидите имя">
@@ -38,10 +114,24 @@
             <h6>CHESS COPYRIGHT 2024</h6>
         </div>
         <div class="icon">
-            <img src="images/discord.png" alt="discord" class="iconimg">
-            <img src="images/vk.png" alt="vk" class="iconimg">
+            <div class="icons">
+                <a href="https://discord.com/" class="icona">
+                <img src="images/discord.png" alt="discord" class="iconimg">
+                </a>
+            </div>
+            <div class="icons">
+                <a href="https://vk.com/" class="icona">
+                <img src="images/vk.png" alt="vk" class="iconimg">
+                </a>
+            </div>
+            <div class="icons">
+            <a href="https://www.youtube.com/" class="icona">
             <img src="images/youtube.png" alt="youtube" class="iconimg">
+            </a>
+            </div>
         </div>
     </footer>
+    <script src="slider.js"></script>
+    <script src="scroll.js"></script>
 </body>
 </html>
